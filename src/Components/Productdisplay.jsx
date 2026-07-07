@@ -61,7 +61,7 @@ function Productdisplay(){
                     <input  type="search" placeholder="Search here" value={searchquery} onChange={handlesearch}></input>
                     
                 </div>  
-                    <Link to="/home"className="prdlink" >Home</Link>
+                    <Link to="/"className="prdlink" >Home</Link>
                     <Link t0="/display" className="prdlink">Products</Link>
                     <Link to="/cart" className="prdlink">Cart</Link>
                     <Link to='/like' className="prdlink">Wishlist</Link>
