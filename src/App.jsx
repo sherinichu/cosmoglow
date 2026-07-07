@@ -25,7 +25,7 @@ function App() {
      {/* <BrowserRouter> */}
      <myContext.Provider value={{product,setProduct,cart,setCart,like,setLike}}>
      <Routes>
-      <Route path='home' element={<Homepage/>}></Route>
+      <Route path='/' element={<Homepage/>}></Route>
       <Route path='reg' element={<Register/>}></Route>
       <Route path='log' element={<Login/>}></Route>
       <Route path='display' element={<Productdisplay/>}></Route>
