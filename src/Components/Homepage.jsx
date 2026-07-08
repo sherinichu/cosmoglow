@@ -6,20 +6,48 @@ import { FaInstagram,FaFacebook,FaTwitter,FaWhatsapp } from "react-icons/fa";
 function Homepage(){
     return(
     <>
-        <div className ="container">
+        {/* <div className ="container"> */}
             <header>
-                <div className="logo">
+              
+        <nav className="navbar">
+            <div className="logo">
         <h2 style={{fontSize:"35px"}}><span style={{color:"#ac664c", fontSize:"40px"}}>Cosmo</span>Glow</h2>
         </div>
-        <nav className="navbar">
-          
-                <Link to="/reg" className="nav-link">Sign Up</Link> 
-                <Link to="/log" className="nav-link">Login</Link> 
-            
+              <div className="lk">
+              <div> <Link to="/reg" className="nav-link">Sign Up </Link> </div>
+                <div><Link to="/log" className="nav-link">Login</Link> </div>
+            </div>
     </nav>
             </header>
+        {/* </div> */}
+           <div className="container-fluid">
+        <div id="mycarousel" className="carousel slide" data-bs-ride="mycarousel" data-bs-interval="3000">
+            <div className="carousel-indicators">
+                <button type="button " data-bs-target="#mycarousel" data-bs-slide-to="0" className="active"></button>
+                <button type="button " data-bs-target="#mycarousel" data-bs-slide-to="1" ></button>
+                <button type="button " data-bs-target="#mycarousel" data-bs-slide-to="2" ></button>
+            </div>
 
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img className="d-block w-100" src="/images/wal.png"/>
+                </div>
+                 <div className="carousel-item ">
+                    <img className="d-block w-100" src="/images/wal2.jpg" />
+                </div>
+                 <div className="carousel-item ">
+                    <img className="  d-block w-100" src="/images/wal3.jpg"/>
+                </div>
+            </div>
+            <button className="carousel-control-next" data-bs-target="#mycarousel" data-bs-slide="next">
+                <span className="carousel-control-next-icon"></span>
+            </button>
+            <button className="carousel-control-prev" data-bs-target="#mycarousel" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon"></span>
+            </button>
         </div>
+    </div>
+
         <section className="categorys">
             <h1> CATEGORIES</h1>
         <div className="category">

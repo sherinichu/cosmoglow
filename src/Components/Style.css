@@ -1,28 +1,41 @@
 
-.container{
-    background-image:url("/images/wal.png");
-    width: 100%;
+ /* .container{
+     background-image:url("/images/wal.png"); */
+    /* width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
-    
-}
-/* .logo{
+      */
+
+.logo{
     position: absolute;
-    margin-top: 3px;
-} */
+    justify-content: left;
+    margin-top: -20px;
+}
+.lk{
+    justify-content: end;
+    margin-left: 90%;
+    gap: 20px;
+    display: flex;
+    margin-top: 20px;
+
+}
 .navbar{
+    height: 60px;
+    width: 100%;
    display: flex;
-   justify-content: flex-end;
-   gap:20px;
+   /* justify-content:center; */
+   /* gap:20px; */
+   background-color: rgba(160, 60, 60, 0.995);
+   position: relative;
     
 }
 nav a{
     color: rgb(126, 72, 5);
     text-decoration: none;
      gap: 10px;
-     font-size: 20px;
+     font-size: 15px;
     
     
 }
@@ -39,16 +52,27 @@ nav a{
  .nav-link{
     position: relative;
     height: 30px;
-    width: 70px;
+    width: 65px;
     border-radius: 4px;
     background-color: rgb(221, 171, 124);
     text-decoration: none;
      padding: 3px;
-     margin-top: -30px; 
-      padding: 5px 5px;
+    
     
     
 } 
+.carousel-item img{
+   height: 700px;
+   object-fit: cover;
+}
+
+.carousel-control-prev ,.carousel-control-next {
+    margin-top:30%;
+    transform: translateY(-50%);
+    bottom: auto;
+    font-size: 40px;
+
+}
 .cate{
     background-color: #d2ac9d;
 }
@@ -75,13 +99,13 @@ h1{
 .card{
     background-color: #F5E6DA;
     height: 340px;
-    width: 300px;
+    width: 350px;
     padding: 30px;
     border-radius: 3px;
    
 }
 .card :hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
     cursor: pointer;
 }
 .card img{
@@ -199,11 +223,21 @@ button{
 }
 /* product  */
 
+.containerpro{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4,1fr); */
+    /* gap: 15px; */
+    padding: 20px;
+}
 .containerpr{
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-color: rgb(235, 199, 166);
+    background-color:white;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 15px;
@@ -233,6 +267,7 @@ button{
 }
 .prdhead{
     height: 80px;
+    /* margin-top: 80px; */
     background-color: #d2ac9d;
 }
 .prdlink{
@@ -254,6 +289,7 @@ button{
     background-color: rgb(17, 16, 16);
     color: white;
     text-align: center;
+    font-size: 13px;
     /* margin-top: -20px; */
     /* margin-left: 20px; */
 }
@@ -263,6 +299,7 @@ button{
     background-color: rgb(17, 16, 16);
     color: white;
     text-align: center;
+    font-size: 13px;
     /* margin-top: -30px; */
     /* margin-left: 150px; */
 }

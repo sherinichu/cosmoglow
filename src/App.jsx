@@ -19,11 +19,12 @@ function App() {
   const[product,setProduct]=useState(products);
   const[cart,setCart]=useState([]);
   const[like,setLike]=useState([]);
+  const[buy,setBuy]=useState([]);
 
   return (
     <>
      {/* <BrowserRouter> */}
-     <myContext.Provider value={{product,setProduct,cart,setCart,like,setLike}}>
+     <myContext.Provider value={{product,setProduct,cart,setCart,like,setLike,buy,setBuy}}>
      <Routes>
       <Route path='/' element={<Homepage/>}></Route>
       <Route path='reg' element={<Register/>}></Route>
