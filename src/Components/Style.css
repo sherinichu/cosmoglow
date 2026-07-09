@@ -15,10 +15,10 @@
 }
 .lk{
     justify-content: end;
-    margin-left: 90%;
+    margin-left: 80%;
     gap: 20px;
     display: flex;
-    margin-top: 20px;
+    margin-top: -10px;
 
 }
 .navbar{
@@ -32,35 +32,59 @@
     
 }
 nav a{
-    color: rgb(126, 72, 5);
+    color: rgb(44, 25, 1);
     text-decoration: none;
      gap: 10px;
-     font-size: 15px;
+     font-size: 20px;
+     font-weight:500;
     
     
 }
- /* Link{
-    text-decoration: none;
+ Link{
+    font-weight: 20px;
+    /* text-decoration: none; */
    position: absolute;
-    color:white;
-    list-style: none;
-    gap: 20px;
+    /* color:white; */
+    /* list-style: none; */
+    /* gap: 20px; */
    
-} */
+}
 
 
  .nav-link{
     position: relative;
-    height: 30px;
-    width: 65px;
+    height: 40px;
+    width: 70px;
     border-radius: 4px;
-    background-color: rgb(221, 171, 124);
+    /* background-color: rgb(212, 109, 25); */
     text-decoration: none;
      padding: 3px;
-    
-    
-    
+     /* font-weight: bold;    */
+}
+.deliver{
+    height: 30px;
+    width: 30%;
+    margin-left: 20%;
+    background-color: rgb(245, 247, 136);
+    font-weight: bold;
+    display: inline-block;
+    /* gap: 30%; */
 } 
+.truck{
+    animation: moveTruck 3s linear infinite;
+
+}
+@keyframes moveTruck{
+    0%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
 .carousel-item img{
    height: 700px;
    object-fit: cover;
@@ -72,6 +96,46 @@ nav a{
     bottom: auto;
     font-size: 40px;
 
+}
+.carousel-item{
+    position: relative;
+}
+.glow-title{
+    position: absolute;
+    color: #6F4E37;
+    font-size: 70px;
+    top: 15%;
+    left: 10%;
+    /* font-weight: bold; */
+    font-style: oblique;
+}
+.beauty-title{
+    position: absolute;
+    color:  rgba(160, 60, 60, 0.995);
+    font-size: 70px;
+    top: 26%;
+    left: 10%;
+    font-weight: bold;
+    font-style: italic;
+}
+.hero-text{
+    position: absolute;
+    top:40%;
+    left: 10%;
+    font-weight: bolder;
+}
+.carbtn{
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    top: 55%;
+    left: 15%;
+    color: white;
+    font-weight: bolder;
+    background-color: #6F4E37; 
+    border-radius: 10px;
+    border-color: white;
+    box-shadow: none;
 }
 .cate{
     background-color: #d2ac9d;
@@ -161,17 +225,139 @@ section{
     margin-top: 30px;
     gap: 20px;
 }
-/* footer{
-    background-color: #D8C3B2;
-} */
+
+/* offers */
+
+.offers{
+    width: 100%;
+    height: 120vh;
+    background-color:#ddbcaf;
+    position: relative;
+}
+.off1{
+    position: absolute;
+    height: 600px;
+    width: 40%;
+    margin-left: 20px;
+    background-color: rgb(241, 239, 237);
+    border-radius: 10px;
+    top:5%;
+    position: relative;
+}
+.off-title{
+    position: absolute;
+    top:5% ;
+    color: #9c4343;
+    left: 10%;
+    font-size: 80px;
+}
+.off-sub{
+    position: absolute;
+    top:25% ;
+    color: #9c4343;
+    left: 20%;
+}
+.off-min{
+    position: absolute;
+    top:35% ;
+    color: #9c4343;
+    left: 20%;
+}
+.off-min1{
+    position: absolute;
+    top:45% ;
+    color: #9c4343;
+    left: 20%;
+    font-style: italic;
+}
+.off2{
+    position: relative;
+    position:absolute;
+    height: 150px;
+    width: 40%;
+    border-radius: 45%;
+    background-color: #ebb78a;
+    top: 60%;
+    left:10%;
+}
+.off2 h2{
+    position: absolute;
+    font-size:medium;
+    color: white;
+    left: 40px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20%;
+}
+.off3{
+    position: relative;
+    position:absolute;
+    height: 150px;
+    width: 40%;
+    border-radius: 45%;
+    background-color: #ebb78a;
+    top: 60%;
+    left:55%;
+}
+.off3 h2{
+    position: absolute;
+    font-size:medium;
+    color: white;
+    left: 28px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25%;
+}
+.off4{
+    height: 730px;
+    width: 130%;
+    background-color: #f3efee;
+    margin-left: 110%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+
+}
+.cardof{
+     position: relative;
+     /* position: absolute; */
+    height: 320px;
+    width: 300px;
+    justify-content: center;
+    gap: 15px;
+    background-color: #e1e0e0;
+   margin-left: 30px;
+   margin-top: 25px;
+}
+.cardof img{
+    position: absolute;
+    height: 280px;
+    width: 250px;
+    padding: 10px 10px;
+    gap: 10px;
+    margin-left: 20px;
+    border-radius: 20%;
+}
+.cardof p{
+    margin-top: 90%;
+    font-style: inherit;
+    font-weight: bolder;
+    text-align: center;
+    
+}
 
 /* register  */
 
 .page{
+    /* width: 100%;
+    height: 700px; */
+    /* background-color: #e1ab95; */
+    height: 110vh;
     width: 100%;
-    height: 700px;
-    background-color: #e1ab95;
-    /* background-color:linear-gradient(135deg,#c46d4b 10%,#E8CDBD 50%,#FAF5EF 100%); */
+    background-image: url("/images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     justify-content: center;
     text-align: center;
     position: relative;
@@ -187,14 +373,14 @@ section{
 }
 form{
     position: absolute;
-    height: 400px;
+    height: 500px;
     width: 400px;
-    background-color:#d9b897;
+    background-color:#fbfbfa;
     border: 2px solid black;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-left: 40%;
-    margin-top: 90px;
+    margin-left: 43%;
+    margin-top: 10%;
     border-radius: 8px;
 }
 .field{
@@ -202,24 +388,94 @@ form{
     flex-direction: column;
     margin-top: 10px;
 }
-.field input{
+.field input,textarea{
     padding: 10px;
     margin: 10px;
 }
 .field label{
     margin-right: 280px;
+    font-weight: 500;
 }
 button{
-    background-color: rgb(68, 67, 67);
+    background-color: rgb(13, 13, 13);
     color: white;
-    width: 70px;
+    width: 70%;
     height: 30px;
 }
 .login{
     height: 300px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 10%;
   
+}
+/* order form  */
+
+.orderpage{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 110vh;
+    width: 100%;
+    background-image: url("/images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.orderpage h2{
+    position: absolute;
+    margin-top: 60px;
+    left: 40%;
+    font-style: oblique;
+}
+.orderpage p{
+    position: absolute;
+    margin-top: 100px;
+    left: 40%;
+    font-style: normal;
+}
+.ordform{
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    margin-top: 10%;
+    margin-right: 40px;
+}
+.field textarea{
+    margin-left: 10px;
+}
+.radio{
+    display: flex;
+    margin-left: 30px;
+    gap: 10px;
+    margin-top: 10px;
+        font-weight: 500;
+
+}
+.fieldrd  {
+    margin-right: 250px;
+    gap: 20px;
+    font-weight: 500;
+}
+/* .fieldrd label{
+    margin-right: 10px;
+} */
+.buttonord{
+    height: 40px;
+    width: 80%;
+    margin-top: 35px;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    font-weight: bolder;
+}
+ .field .errors{
+    color: red;
+    margin-top: 18%;
+    left: 30%;
+}
+ .fieldrd .errors{
+    color: red;
+    margin-top: 4%;
+    left: 30%;
 }
 /* product  */
 

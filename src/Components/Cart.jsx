@@ -9,20 +9,21 @@ import { Link,useNavigate } from "react-router-dom";
 
 function Cart(){
     const{cart,setCart,buy,setBuy}=useContext(myContext)
+    const nav=useNavigate();
 
     const handleremove = (index)=>{
         const newcart=[...cart]
         newcart.splice(index,1);
         setCart(newcart);
     }
-     const handlebuy=(pdt)=>{
-        if(buy.includes(pdt)){
-            setBuy(buy.filter(pro)!==pdt)
-        }
-        else{
-            setBuy([...buy,pdt])
-        }
-    }
+    //  const handlebuy=(pdt)=>{
+    //     if(buy.includes(pdt)){
+    //         setBuy(buy.filter(pro)!==pdt)
+    //     }
+    //     else{
+    //         setBuy([...buy,pdt])
+    //     }
+    // }
 
     return(
         <>
@@ -53,7 +54,7 @@ function Cart(){
                 </ul>
                  <div className="btnn">
                 <button className="btn2" onClick={()=>handleremove(index)}>Remove</button>
-                <button className="btn1"  onClick={()=>handlebuy(item)}>{buy.includes(item) ? "order placed" :"buy"}</button>
+                <button className="btn1"  onClick={()=>nav("/order")}>order</button>
                  </div>
                 
             </div>

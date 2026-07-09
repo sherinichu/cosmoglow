@@ -13,6 +13,7 @@ import Productdisplay from './Components/Productdisplay'
 import Cart from './Components/Cart'
 import Wishlist from './Components/Wishlist'
 import Category from './Components/Category'
+import Orderform from './Components/Orederform'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,8 @@ function App() {
       <Route path='cart' element={<Cart/>}></Route>
        <Route path='like' element={<Wishlist/>}></Route>
        <Route path='/display/:cat' element={<Category/>}></Route>
+        <Route path='order' element={<Orderform/>}></Route>
+
 
 
         </Routes>

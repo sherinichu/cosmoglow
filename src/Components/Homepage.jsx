@@ -13,9 +13,12 @@ function Homepage(){
             <div className="logo">
         <h2 style={{fontSize:"35px"}}><span style={{color:"#ac664c", fontSize:"40px"}}>Cosmo</span>Glow</h2>
         </div>
+        {/* <div> */}
+             <span className="deliver"> <span className="truck">🚛</span> Free Delivery on Your First order..Order Now✨</span>
+             {/* </div> */}
               <div className="lk">
-              <div> <Link to="/reg" className="nav-link">Sign Up </Link> </div>
-                <div><Link to="/log" className="nav-link">Login</Link> </div>
+              <div className="nav-link"> <Link to="/reg" >Sign Up </Link> </div>
+                <div className="nav-link"><Link to="/log" >Login</Link> </div>
             </div>
     </nav>
             </header>
@@ -31,6 +34,11 @@ function Homepage(){
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img className="d-block w-100" src="/images/wal.png"/>
+                    <h2 className="glow-title"> Glow Beyond</h2>
+                    <h2 className="beauty-title">Beauty</h2>
+                    <p className="hero-text">Discover premium skincare beauty products 
+                     that <br /> bring out your natural radience</p>
+                     <button className="carbtn" onClick={'/reg'}>Shop Now</button>
                 </div>
                  <div className="carousel-item ">
                     <img className="d-block w-100" src="/images/wal2.jpg" />
@@ -69,6 +77,32 @@ function Homepage(){
             </div>
             </div>
         </section>
+      <section className="offers">
+        <h1 style={{fontStyle:"oblique", color:"#a63e36",fontWeight:'bold'}}> what we Offer</h1>
+        <div className="off1">
+            <h1 className="off-title">Winter sale</h1>
+            <h2 className="off-sub">Up to 50% offers</h2>
+            <h3 className="off-min">on selected Brands </h3><h5 className="off-min1">Limited Time offer</h5>
+            <div className="off2">
+                <h2>Glow More, Spend Less<br/>Enjoy Big savings</h2>
+                </div>
+                <div className="off3">
+                <h2>Limited Time Offer-Shop before its gone</h2>
+            </div>
+
+             <div className="off4">
+               {/* <div className="cards"> */}
+
+                <div className="cardof"> <img src="/images/off1.jpg"/><p>Buy combo pack<br/>get 50% offer</p></div>             
+                <div className="cardof"> <img src="/images/offf2.jpg"/><p>up to<br/> 70% offer</p></div>
+                <div className="cardof"> <img src="/images/off3.jpg"/><p>Buy 2<br/> Get 1 Free</p></div>
+                <div className="cardof"> <img src="/images/off4.jpg"/><p>30% Offer<br/> Grab Now</p></div>
+            {/* </div> */}
+</div> 
+        </div>
+        
+      </section>
+    
         <section className="brands">
             <h1>Our Top Brands</h1>
             <div className="brand">
@@ -96,11 +130,11 @@ function Homepage(){
             <div>
                 <h3>Quik Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">categories</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" style={{color:'white'}}>Home</a></li>
+                    <li><a href="#" style={{color:'white'}}>Products</a></li>
+                    <li><a href="#" style={{color:'white'}}>categories</a></li>
+                    <li><a href="#" style={{color:'white'}}>About Us</a></li>
+                    <li><a href="#" style={{color:'white'}}>Contact Us</a></li>
                 </ul>
             </div>
             <div>

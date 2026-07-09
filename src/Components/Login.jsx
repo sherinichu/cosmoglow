@@ -40,12 +40,12 @@ export default function Login(){
       return(
         <div>
             <div className="page">
-                <h1 style={{color:"white"}}>Welcome back</h1>
+                <h1 style={{color:"black",fontStyle:'oblique',position:'absolute',marginTop:"3%"}}>Welcome back</h1>
              {error && (
                 <div >{error}</div>
              )}
                 <form className="login" onSubmit={handleSubmit} >
-                                    <h2 >Login to your Account</h2>
+                                    <h2 >Login</h2>
 
                     <div className="field" >
                         <label>Email</label>

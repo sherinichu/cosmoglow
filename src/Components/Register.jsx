@@ -50,8 +50,8 @@ export default function Register(){
     return(
         <div>
             <div className="page">
-                <h1  style={{color:"white" }}>Create Account</h1>
-                <h4 style={{color:"white"}} >Register to get Started</h4>
+                <h1  style={{color:"black",position:'absolute',marginTop:'25px' }}>Create Account</h1>
+                <h4 style={{color:"black" ,fontStyle:'oblique' ,position:'absolute',marginTop:'6%' }} >Register to get Started</h4>
                 { success && (
                     <div>Registered Successfully! Redirecting to login....</div>
                 )}
